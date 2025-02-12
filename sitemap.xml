@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/Untitled Folder/Index.html</loc>
-    <lastmod>2025-02-03T21:49:46.243Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/001_test_2/index.html</loc>
-    <lastmod>2025-02-03T21:49:46.243Z</lastmod>
-  </url>
-  <url>
     <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2025-02-03T21:49:46.241Z</lastmod>
+    <lastmod>2025-02-12T21:42:05.302Z</lastmod>
   </url>
   <url>
-    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2025-02-03T21:49:46.241Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/post 4/post 4.html</loc>
-    <lastmod>2025-02-03T21:49:46.243Z</lastmod>
+    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/post 4/Untitled.html</loc>
+    <lastmod>2025-02-12T21:42:05.303Z</lastmod>
   </url>
   <url>
     <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2025-02-03T21:49:46.242Z</lastmod>
+    <lastmod>2025-02-12T21:42:05.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/about.html</loc>
+    <lastmod>2025-02-12T21:42:05.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/Untitled Folder/Index.html</loc>
+    <lastmod>2025-02-12T21:42:05.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/001_test_2/index.html</loc>
+    <lastmod>2025-02-12T21:42:05.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sose27.github.io/comm4190_S25_Using_LLMs_Blog/posts/post 4/post 4.html</loc>
+    <lastmod>2025-02-12T21:42:05.303Z</lastmod>
   </url>
 </urlset>
