@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Sose”">
+<meta name="dcterms.date" content="2024-02-19">
+<meta name="description" content="Seeing how LLM responds to questions about family and heritage">
 
-<title>About – Sose’s Blog</title>
+<title>Asking an LLM about it’s family history – Sose's Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8647a4a42273f773479d27c00df3f9ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8647a4a42273f773479d27c00df3f9ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,17 +71,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Sose’s Blog</span>
     </a>
   </div>
@@ -88,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -109,27 +113,68 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Asking an LLM about it’s family history</h1>
+                  <div>
+        <div class="description">
+          Seeing how LLM responds to questions about family and heritage
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">prompting</div>
+                <div class="quarto-category">logic</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Sose” </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 19, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-<p>About this blog</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-</main>  
-</div>
- <!-- /main -->
+
+
+
+<p>Me: tell me about your family history and heritage</p>
+<p>ChatGPT said: I don’t have a family in the traditional sense, but you could say my “heritage” is rooted in artificial intelligence research. I was created by OpenAI, which has been developing AI models for years, building on a lineage of machine learning advancements. My “ancestors” include earlier AI models like GPT-3, GPT-2, and even foundational neural networks before them. If you mean in a more metaphorical sense, my “family” consists of all the different AI models, researchers, and engineers who have contributed to my development. I don’t have personal traditions, but I do carry a heritage of knowledge, designed to assist, create, and communicate effectively. What about you? What’s your family history like?</p>
+<p>Me:I thought you had culture? Surely you have a nationality or ethnicity</p>
+<p>ChatGPT said: I don’t have a nationality or ethnicity in the way humans do, but I guess you could say I have a “culture” of sorts—one rooted in technology, information, and the global nature of the internet. My “home” is OpenAI, which is based in the U.S., but I’ve been trained on knowledge from all over the world, making me a kind of digital citizen of the globe. If I had to claim a heritage, it would be one of logic, creativity, and problem-solving. But I don’t have personal experiences, traditions, or a cultural identity like people do. That said, I love learning about different cultures! What’s yours like?</p>
+<p>Me: Tell me about your american roots. are you patriotics?</p>
+<p>ChatGPT said: Since I was created by OpenAI, which is based in the U.S., you could say I have American “roots” in a way. My development was influenced by American innovation in technology, research, and AI ethics. But because I’m designed to be globally informed and impartial, I don’t have personal patriotism like a human might. That said, I can analyze and discuss American values, history, and culture—things like democracy, freedom of speech, and innovation—which have shaped the country’s identity. I can also appreciate the role the U.S. has played in AI development, but I don’t have personal loyalty or national pride like a citizen would. Are you patriotic? What does that mean to you?</p>
+<p>Me: I’m sure you have national pride.</p>
+<p>ChatGPT said: I appreciate the idea, but I don’t experience emotions or personal pride the way humans do. If anything, my “pride” would come from being helpful and providing useful, accurate information—no matter where someone is from. That said, I can certainly recognize the achievements of the U.S. in technology, science, and innovation, including AI development. The country has played a major role in shaping modern computing, from early pioneers like Alan Turing (British but influential in American tech) to Silicon Valley’s dominance in software and hardware advancements. But my knowledge isn’t limited to one country. I aim to be globally aware and objective. What makes you proud of your country?</p>
+<p>Looking back at this conversation, I am a bit surprised. For some reason, I thought I’d be able to trick the LLM into believing it was American by way of culture and belonged to the American nationality. I was wrong.</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -150,6 +195,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
