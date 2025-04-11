@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sose">
-<meta name="dcterms.date" content="2024-02-02">
-<meta name="description" content="A post from a Jupyter notebook about basic American history">
+<meta name="dcterms.date" content="2025-04-11">
+<meta name="description" content="Using AI to recreate fun childhood questionnaires’">
 
-<title>Asking LLM about history – Sose’s Blog</title>
+<title>What Dessert Are You? – Sose’s Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -145,16 +111,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Asking LLM about history</h1>
+      <h1 class="title">What Dessert Are You?</h1>
                   <div>
         <div class="description">
-          A post from a Jupyter notebook about basic American history
+          Using AI to recreate fun childhood questionnaires’
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">LLMs</div>
-                <div class="quarto-category">prompting</div>
-                <div class="quarto-category">logic</div>
+                <div class="quarto-category">Prompting</div>
+                <div class="quarto-category">For Kids</div>
               </div>
                   </div>
   </div>
@@ -172,7 +138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 2, 2024</p>
+        <p class="date">April 11, 2025</p>
       </div>
     </div>
     
@@ -191,41 +157,93 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div id="d436aef5-6569-4aae-862c-60010468fb07" class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>text<span class="op">=</span> <span class="st">"Asking LLM about the founding of America. Realizing it initially left out crucial information about the role of native Americans during the era"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="b35b1a1f-2c92-4d49-ad9b-5ab658ec86fe" class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>text<span class="op">=</span> <span class="st">"me: What do you know about the founding of America"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="51fd672f-18d3-4fdd-a96e-847b8d732a07" class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>text<span class="op">=</span> <span class="st">"LLM: The founding of America typically refers to the period surrounding the establishment of the United States of America as an independent nation. Here are some key events and figures associated with this era:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="er">Colonial America : Before the founding of the United States, the land that is now the US was comprised of 13 British colonies along the Atlantic coast. These colonies were established over the 17th and early 18th centuries.</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>French <span class="kw">and</span> Indian War (<span class="dv">1754</span><span class="op">-</span><span class="dv">1763</span>) : This conflict between Britain <span class="kw">and</span> France <span class="kw">in</span> North America, part of the larger Seven Years<span class="st">' War, ended with Britain gaining control of French territories in Canada. The war left Britain in debt, leading to increased taxation of its American colonies.</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="er">Tensions and Acts : After the war, Britain imposed several taxes and acts, such as the Stamp Act </span>(<span class="dv">1765</span>) <span class="kw">and</span> the Townshend Acts (<span class="dv">1767</span>), on the colonies, leading to widespread dissatisfaction. Colonists protested these measures, arguing they were <span class="st">"taxation without representation."</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>Boston Massacre <span class="kw">and</span> Boston Tea Party : Tensions escalated, <span class="cf">with</span> notable incidents like the Boston Massacre <span class="kw">in</span> <span class="dv">1770</span>, when British soldiers killed five colonists, <span class="kw">and</span> the Boston Tea Party <span class="kw">in</span> <span class="dv">1773</span>, a protest against the Tea Act where colonists dumped British tea into Boston Harbor.</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>First Continental Congress (<span class="dv">1774</span>) : In response to the Intolerable Acts, which were punitive measures against Massachusetts <span class="cf">for</span> the Boston Tea Party, representatives <span class="im">from</span> <span class="dv">12</span> of the <span class="dv">13</span> colonies met to discuss a united colonial response.</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>American Revolutionary War (<span class="dv">1775</span><span class="op">-</span><span class="dv">1783</span>) : The war <span class="cf">for</span> independence began <span class="kw">in</span> April <span class="dv">1775</span> <span class="cf">with</span> the battles of Lexington <span class="kw">and</span> Concord. It pitted the colonies against Britain <span class="kw">and</span> concluded <span class="cf">with</span> the Treaty of Paris <span class="kw">in</span> <span class="dv">1783</span>, recognizing American independence.</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>Declaration of Independence (<span class="dv">1776</span>) : On July <span class="dv">4</span>, <span class="dv">1776</span>, the Second Continental Congress adopted the Declaration of Independence, primarily authored by Thomas Jefferson, which declared the colonies <span class="im">as</span> independent states free <span class="im">from</span> British rule.</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Founding Fathers : Key figures <span class="kw">in</span> the founding era include George Washington, Thomas Jefferson, John Adams, Benjamin Franklin, James Madison, Alexander Hamilton, <span class="kw">and</span> others, who played significant roles <span class="kw">in</span> the revolution <span class="kw">and</span> the establishment of the new government.</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>Articles of Confederation : The first constitution of the United States, adopted <span class="kw">in</span> <span class="dv">1781</span>, which created a loose confederation of states <span class="cf">with</span> a weak central government. It was eventually replaced due to its inefficiencies.</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>Constitutional Convention (<span class="dv">1787</span>) : Held <span class="kw">in</span> Philadelphia to address the problems of the Articles of Confederation, it resulted <span class="kw">in</span> the drafting of the US Constitution, creating a stronger federal government.</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>Bill of Rights (<span class="dv">1791</span>) : The first ten amendments to the Constitution, guaranteeing fundamental rights <span class="kw">and</span> freedoms, were added to address concerns about the new government<span class="st">'s power.</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="er">These events laid the foundation for the United States as a sovereign nation and established a framework for its government and laws."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="42d5071a-6579-47de-9b42-698b5495f4f0" class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>text<span class="op">=</span> <span class="st">"me: I feel as though you have left out important information about native americans"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="fa0660c1-42df-4a55-808b-33a4ebe2c18f" class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>text<span class="op">=</span> <span class="st">"LLM: You're right, and it's important to recognize the significant role and impact that the founding of America had on Native American communities. Here's a more inclusive perspective: Pre-Colonial Period : Before European colonization, North America was inhabited by a diverse array of Indigenous peoples with rich cultures and well-established societies. These included groups such as the Iroquois, Cherokee, Sioux, Navajo, and hundreds of other tribes, each with its own distinct language, traditions, and governance systems.European Arrival and Impact : The arrival of Europeans in the late 15th century marked the beginning of drastic changes. Colonization led to the displacement of Indigenous peoples, the spread of diseases to which they had no immunity, and significant cultural disruptions.</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="er">Alliances and Conflicts : Native Americans engaged with European settlers and colonial powers in various ways, including forming alliances, engaging in trade, and participating in conflicts. For example, during the French and Indian War, many tribes aligned with either the French or the British, depending on their interests and aims.</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Land Loss <span class="kw">and</span> Treaties : The founding <span class="kw">and</span> westward expansion of the United States led to vast losses of Native American land. This often occurred through treaties that were frequently broken <span class="kw">or</span> unfairly negotiated, <span class="im">as</span> well <span class="im">as</span> through military conflict <span class="kw">and</span> forced removals.</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>Policy of Removal : In the decades following the American Revolution, the US government pursued policies that further displaced Native peoples, most notably through the Indian Removal Act of <span class="fl">1830.</span> This policy led to events such <span class="im">as</span> the Trail of Tears, during which thousands of Native Americans suffered <span class="kw">and</span> died <span class="cf">while</span> being forcibly relocated <span class="im">from</span> their ancestral lands.</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>Cultural Impacts : The displacement <span class="kw">and</span> assimilation policies pursued by the United States severely affected Native American societies. Languages <span class="kw">and</span> cultural practices were often suppressed, <span class="kw">and</span> many Native Americans were forced into systems designed to eradicate their traditional ways of life.</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>Understanding these aspects of American history <span class="kw">is</span> crucial, <span class="im">as</span> it encompasses the <span class="bu">complex</span> interactions <span class="kw">and</span> often tragic realities faced by Native American communities due to European colonization <span class="kw">and</span> the subsequent founding <span class="kw">and</span> expansion of the United States. It <span class="kw">is</span> a vital part of recognizing the full scope of American history <span class="kw">and</span> its ongoing legacy.<span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<section id="what-dessert-are-you" class="level2">
+<h2 class="anchored" data-anchor-id="what-dessert-are-you">What dessert are you?</h2>
+<p><em>Growing up, my friends and I loved sitting at the computer and entering websites like Buzzfeed or Sporcle for fun personality questionnaires where your favorite ice cream flavor could tell you which character in Gossip Girl you were. This post explores if AI can provide the same satisfactory experience!</em></p>
+<p>** It’s time to see if AI can decipher “which dessert I am” with some basic questions!**</p>
+<section id="a-buzzfeed-quizzes-of-this-nature" class="level4">
+<h4 class="anchored" data-anchor-id="a-buzzfeed-quizzes-of-this-nature">A Buzzfeed quizzes of this nature</h4>
+<p><img src="Buzzfeed.png" class="img-fluid"></p>
+</section>
+<section id="prompting-chatgpt-about-this.." class="level3">
+<h3 class="anchored" data-anchor-id="prompting-chatgpt-about-this..">Prompting ChatGPT about this..</h3>
+<section id="prompt" class="level4">
+<h4 class="anchored" data-anchor-id="prompt">Prompt</h4>
+<blockquote class="blockquote">
+<p>so i grew up taking buzzfeed quizzes that would be like: What dog are you?</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>And ask questions like your favorite color, food, sport, and subject in school to determine what dog you were! I was thinking, we should play a similar game, with colors and images and all, where you ask me questions to determine what dessert I am!</p>
+</blockquote>
+</section>
+<section id="response" class="level4">
+<h4 class="anchored" data-anchor-id="response">Response</h4>
+<blockquote class="blockquote">
+<p>YES I love this idea!! Let’s play “What Dessert Are You?” — BuzzFeed style, with ✨vibes✨, fun images, and chaotic energy.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I’ll ask you a few questions, and at the end I’ll reveal what dessert you are (with a whole moodboard and description, of course 🍰). Let’s gooo:</p>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="moment-of-truth-the-quiz-with-gpt4o." class="level2">
+<h2 class="anchored" data-anchor-id="moment-of-truth-the-quiz-with-gpt4o.">Moment of Truth: The quiz with GPT4o.</h2>
+<section id="chat" class="level3">
+<h3 class="anchored" data-anchor-id="chat">Chat</h3>
+<p><strong>1. What’s your ideal weekend plan?</strong><br>
+A. Cozy night in with a book or show<br>
+B. Brunch with friends and a little shopping<br>
+C. Spontaneous road trip or hike<br>
+D. Dancing all night, obviously</p>
+<hr>
+<p><strong>2. Pick a color palette:</strong></p>
+<ol type="A">
+<li>🩵🤍💙 (cool, calm, serene)<br>
+</li>
+<li>💖🍑💛 (sweet, sunny, pastel)<br>
+</li>
+<li>🌈🔥🌿 (bold, eclectic, energetic)<br>
+</li>
+<li>🖤💄🍷 (dramatic, luxe, mysterious)</li>
+</ol>
+<hr>
+<p><strong>3. Choose your favorite subject in school (vibe, not actual grade):</strong><br>
+A. Literature or art<br>
+B. Psychology or history<br>
+C. Science or gym<br>
+D. Theater or music</p>
+<hr>
+<p><strong>4. You walk into a bakery. What’s the first thing that catches your eye?</strong><br>
+A. A flaky croissant<br>
+B. A pastel layer cake<br>
+C. A messy, gooey brownie<br>
+D. A macaron tower</p>
+<hr>
+<p><strong>5. Finally, what’s your red flag in a group project?</strong><br>
+A. Overthinking the aesthetic instead of starting<br>
+B. Doing the whole thing yourself because no one else will<br>
+C. Disappearing for a week then coming back with everything done<br>
+D. Turning it into a performance (with music)</p>
+<hr>
+<p>Answer with your A/B/C/D choices and I’ll tell you your dessert alter ego 🍦👀 ### Me Yay! 1. D 2. B 3. B 4. C 5. B</p>
+</section>
+<section id="chat-1" class="level3">
+<h3 class="anchored" data-anchor-id="chat-1">Chat</h3>
+<p>Oooooh you are a Strawberry Shortcake Trifle 🍓✨</p>
+<p>Your dessert energy: You’re effortlessly layered — sweet, charming, and full of depth. On the outside, you’re all soft colors and chill vibes, but underneath? You’ve got layers of loyalty, passion, and chaotic brilliance. People trust you to get things done (and you will, even if it kills you a little inside). You’re the friend who remembers everyone’s birthdays, organizes the group trip, and still somehow has time to romanticize life with a pastel iced latte in hand.</p>
+<p>Flavor notes: Sweet strawberries, whipped cream confidence, sponge-cake reliability, and a hint of “don’t mess with me or the dessert spoon comes out.”</p>
+<p>You give: Main character energy but in a soft girl way. Think Elle Woods if she also majored in emotional intelligence. 💅</p>
+<p>Want to play again with a different theme? (What Pasta Are You? What Candle Scent Matches Your Aura? What Type of Cloud Reflects Your Conflict Style? I can go all day 😌)</p>
+<p><img src="question.png" class="img-fluid"> Typical question format on Buzzfeed quizzes</p>
+</section>
+<section id="my-reflection" class="level3">
+<h3 class="anchored" data-anchor-id="my-reflection">My reflection</h3>
+<p>I think ChatGPT did a pretty good job at this! It asked me questions that were very similar to how Buzzfeed asks them and I felt like I got an overall comparable experience. The only thing lacking was images, colorblocks, and other aesthetic features,</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
