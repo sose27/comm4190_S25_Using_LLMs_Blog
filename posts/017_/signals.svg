@@ -1,0 +1,77 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8A2BE2;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FF69B4;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Title -->
+  <text x="400" y="80" font-family="Arial" font-size="48" fill="white" text-anchor="middle" font-weight="bold" filter="url(#glow)">MIXED SIGNALS</text>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.7">
+    <path d="M100,150 Q400,50 700,150" stroke="white" stroke-width="2" fill="none" />
+    <path d="M100,450 Q400,550 700,450" stroke="white" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- Phone icon with heart notifications -->
+  <g transform="translate(200, 300)">
+    <rect x="-40" y="-70" width="80" height="140" rx="10" fill="#333" />
+    <rect x="-35" y="-65" width="70" height="130" rx="5" fill="#111" />
+    <circle cx="0" cy="80" r="10" fill="#444" />
+    
+    <!-- Notification hearts -->
+    <circle cx="50" cy="-60" r="15" fill="#FF4444" />
+    <text x="50" y="-55" font-family="Arial" font-size="16" fill="white" text-anchor="middle">♥</text>
+    
+    <circle cx="60" cy="-30" r="15" fill="#FF4444" />
+    <text x="60" y="-25" font-family="Arial" font-size="16" fill="white" text-anchor="middle">♥</text>
+  </g>
+  
+  <!-- Two figures with distance and emotional barrier -->
+  <g transform="translate(500, 300)">
+    <!-- Figure 1 -->
+    <circle cx="-100" cy="0" r="30" fill="#7B68EE" />
+    <circle cx="-100" cy="-15" r="15" fill="#7B68EE" />
+    
+    <!-- Figure 2 -->
+    <circle cx="100" cy="0" r="30" fill="#FF69B4" />
+    <circle cx="100" cy="-15" r="15" fill="#FF69B4" />
+    
+    <!-- Dashed line representing distance -->
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="white" stroke-width="3" stroke-dasharray="10,5" />
+    
+    <!-- Thought bubbles -->
+    <path d="M-130,"-60" Q-140,-80 -120,-80 T-110,-60 Z" fill="white" />
+    <circle cx="-120" cy="-90" r="15" fill="white" />
+    <text x="-120" y="-86" font-family="Arial" font-size="16" fill="#7B68EE" text-anchor="middle">?</text>
+    
+    <path d="M130,"-60" Q140,-80 120,-80 T110,-60 Z" fill="white" />
+    <circle cx="120" cy="-90" r="15" fill="white" />
+    <text x="120" y="-86" font-family="Arial" font-size="16" fill="#FF69B4" text-anchor="middle">?</text>
+  </g>
+  
+  <!-- Key song phrases -->
+  <text x="400" y="160" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-style="italic">"You're sending mixed signals my way"</text>
+  <text x="400" y="475" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-style="italic">"It drives me crazy, drives me insane"</text>
+  <text x="400" y="510" font-family="Arial" font-size="20" fill="white" text-anchor="middle">"So tell me straight, what's it gonna be?"</text>
+  
+  <!-- Decorative musical notes -->
+  <g fill="white" opacity="0.6">
+    <text x="100" y="200" font-family="Arial" font-size="30">♪</text>
+    <text x="150" y="250" font-family="Arial" font-size="24">♫</text>
+    <text x="120" y="300" font-family="Arial" font-size="34">♩</text>
+    <text x="700" y="200" font-family="Arial" font-size="30">♪</text>
+    <text x="650" y="250" font-family="Arial" font-size="24">♫</text>
+    <text x="680" y="300" font-family="Arial" font-size="34">♩</text>
+  </g>
+</svg>
