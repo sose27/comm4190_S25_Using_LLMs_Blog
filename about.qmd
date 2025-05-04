@@ -1,7 +1,7 @@
 ---
 title: About!
 image: profile.jpg
-about: Hi, I'm Sose and I'm a junior at Penn's Annenberg School, majoring in Communication with a concentration in data and network science. I also have minors in consumer psychology and history and plan on a career in corporate communications and marketing. COMM 4190 is the first class I've taken toward my concentration and these blogs show my growth with my first experiences using Github and Markdown. Read them to learn a bit about me and see my progress in this class! Feel free to reach out by email: sosehova@sas.upenn.edu  
+about: Hi, I'm Sose and I'm a junior at Penn's Annenberg School, majoring in Communication with a concentration in data and network science. I also have minors in consumer psychology and history and plan on a career in corporate communications and marketing. COMM 4190 is the first class I've taken toward my concentration and these blogs show my growth with my first experiences using Github and Markdown. Read them to learn a bit about me and see my progress in this class!
 
   template: jolla 
 ---
