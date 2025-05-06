@@ -1,6 +1,5 @@
-About this blog
 ---
-title: About 
+title: About this blog
 image: profile.jpg
 about:
   template: minty
